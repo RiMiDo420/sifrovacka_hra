@@ -1088,8 +1088,6 @@ zebracka""".split('\n');
         return encodeWordToSemaphore(text);
       case "maya":
         return encodeToMayaMorseImage(text);
-      case "icon":
-        return generateAppIcon();
       default:
       return generateTextImage(text);
     }
@@ -1880,112 +1878,6 @@ Future<Uint8List> encodeToMayaMorseImage(String word) async {
   final ui.Image img = await picture.toImage(width.toInt(), height.toInt());
   final ByteData? byteData = await img.toByteData(format: ui.ImageByteFormat.png);
   
-  return byteData!.buffer.asUint8List();
-}
-
-
-Future<Uint8List> generateAppIcon() async {
-  const double size = 1024.0; // Standard App Store / Play Store icon size
-  const String word = "CIPHER"; // The secret word your icon will spell
-
-  const Map<String, List<int>> semaphoreMap = {
-    'A': [5, 6], 'B': [5, 7], 'C': [5, 8], 'D': [5, 1],
-    'E': [5, 2], 'F': [5, 3], 'G': [5, 4], 'H': [6, 7],
-    'I': [6, 8], 'J': [3, 7], 'K': [6, 1], 'L': [6, 2],
-    'M': [6, 3], 'N': [6, 4], 'O': [7, 8], 'P': [7, 1],
-    'Q': [7, 2], 'R': [7, 3], 'S': [7, 4], 'T': [8, 1],
-    'U': [8, 2], 'V': [8, 4], 'W': [2, 3], 'X': [2, 4],
-    'Y': [8, 3], 'Z': [4, 7],
-  };
-
-  final ui.PictureRecorder recorder = ui.PictureRecorder();
-  final Canvas canvas = Canvas(recorder);
-  final Offset center = const Offset(size / 2, size / 2);
-  final double radius = (size / 2) - 120.0; // Large margin for icon padding
-
-  // 1. Dark App Icon Background
-  final Paint bgPaint = Paint()..color = const Color(0xFF111111);
-  canvas.drawRect(const Rect.fromLTWH(0, 0, size, size), bgPaint);
-
-  // 2. The Outer Circuit Ring
-  final Paint circlePaint = Paint()
-    ..color = const Color(0xFF333333)
-    ..style = PaintingStyle.stroke
-    ..strokeWidth = 12.0
-    ..isAntiAlias = true;
-  canvas.drawCircle(center, radius, circlePaint);
-
-  // Calculate the 8 Nodes
-  final List<Offset> points = [];
-  for (int i = 0; i < 8; i++) {
-    final double angle = (-90 + (i * 45)) * (pi / 180);
-    points.add(Offset(center.dx + radius * cos(angle), center.dy + radius * sin(angle)));
-  }
-
-  // Pre-calculate frequencies for parallel lines
-  final Map<String, int> pairTotals = {};
-  for (int i = 0; i < word.length; i++) {
-    final pair = semaphoreMap[word[i]]!;
-    final pA = min(pair[0], pair[1]);
-    final pB = max(pair[0], pair[1]);
-    pairTotals['$pA-$pB'] = (pairTotals['$pA-$pB'] ?? 0) + 1;
-  }
-
-  final Map<String, int> pairDrawn = {};
-
-  // 3. Draw the thick, vibrant cipher lines
-  for (int i = 0; i < word.length; i++) {
-    final pair = semaphoreMap[word[i]]!;
-    final pA = min(pair[0], pair[1]);
-    final pB = max(pair[0], pair[1]);
-    final key = '$pA-$pB';
-    
-    final total = pairTotals[key]!;
-    final drawn = pairDrawn[key] ?? 0;
-    pairDrawn[key] = drawn + 1;
-
-    final Offset p1 = points[pA - 1]; 
-    final Offset p2 = points[pB - 1];
-
-    final double dx = p2.dx - p1.dx;
-    final double dy = p2.dy - p1.dy;
-    final double len = sqrt(dx * dx + dy * dy);
-    
-    const double gap = 24.0; 
-    final double offset = (drawn - (total - 1) / 2) * gap;
-
-    final Offset shiftedP1 = Offset(p1.dx + (-dy / len) * offset, p1.dy + (dx / len) * offset);
-    final Offset shiftedP2 = Offset(p2.dx + (-dy / len) * offset, p2.dy + (dx / len) * offset);
-
-    // Get the bright, original HSV hue
-    final double currentHue = _getRainbowHue(i, word.length);
-    final Color vibrantColor = HSVColor.fromAHSV(1.0, currentHue, 1.0, 1.0).toColor();
-
-    // Thick black outline for contrast
-    canvas.drawLine(shiftedP1, shiftedP2, Paint()
-      ..color = const Color(0xFF111111)
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 32.0 
-      ..strokeCap = StrokeCap.round
-      ..isAntiAlias = true);
-
-    // Vibrant inner color
-    canvas.drawLine(shiftedP1, shiftedP2, Paint()
-      ..color = vibrantColor
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 20.0 
-      ..strokeCap = StrokeCap.round
-      ..isAntiAlias = true);
-  }
-
-  // 4. Draw large outer nodes
-  for (final point in points) {
-    canvas.drawCircle(point, 30.0, Paint()..color = const Color(0xFFEEEEEE));
-    canvas.drawCircle(point, 15.0, Paint()..color = const Color(0xFF111111)); 
-  }
-
-  final ui.Image image = await recorder.endRecording().toImage(size.toInt(), size.toInt());
-  final ByteData? byteData = await image.toByteData(format: ui.ImageByteFormat.png);
   return byteData!.buffer.asUint8List();
 }
 
