@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
     dummyData["D"]!.addAnswer("Odpověd 2", dummyData["B"]!);
     dummyData["D"]!.addAnswer("Odpověd 3", dummyData["C"]!);
 
-    rozaData["S1"] = (LabyrintModel(name: "S1", question: "Kolik je Ríšovi?", code: "S1", hasCipher: true, cipherType: "icon", cipherSolution: "politologies", fixedSolution: false, skipWord: "skip"));
+    rozaData["S1"] = (LabyrintModel(name: "S1", question: "Kolik je Ríšovi?", code: "S1", hasCipher: true, cipherType: "segment", cipherSolution: "politologies", fixedSolution: false, skipWord: "skip"));
     rozaData["S11"] = (LabyrintModel(name: "S11", question: "Na co byl přejmenován Mexický záliv?", code: "AAAA"));
     rozaData["S12"] = (LabyrintModel(name: "S12", question: "Co bylo téma prvního tábora?", code: "AAAA"));
     rozaData["S13"] = (LabyrintModel(name: "S13", question: "Kdy získalo Mexiko nezávislost?", code: "AAAA"));
