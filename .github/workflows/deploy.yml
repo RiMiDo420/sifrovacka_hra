@@ -31,7 +31,7 @@ jobs:
 
       - name: Build Web App
         # IMPORTANT: Change YOUR_REPO_NAME below
-        run: flutter build web --base-href "sifrovacka_hra"
+        run: flutter build web --base-href "/sifrovacka_hra"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
