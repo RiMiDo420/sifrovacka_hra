@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
     rozaData["S16"] = (LabyrintModel(internalName: "S16", name: "B", question: "Kdo je aktuálně nejmladší účastník tábora?", code: "LKDTL" ,coordinates: "50.4873608N, 16.0629172E"));
 
     rozaData["S2"] = (LabyrintModel(internalName: "S2", name: "M", question: "Které zvíře je v africké velké pětce?", code: "YCAER", hasCipher: true, cipherType: "Mayská", skipWord: "pyramida",coordinates: "50.4906333N, 16.0633620E"));
-    rozaData["S21"] = (LabyrintModel(internalName: "S21", name: "C", question: "Která písnička není ve lvím králi?", code: "CJPWY",coordinates: "50.4903742N, 16.0637711E"));
+    rozaData["S21"] = (LabyrintModel(internalName: "S21", name: "C", question: "Která písnička není ve Lvím králi?", code: "CJPWY",coordinates: "50.4903742N, 16.0637711E"));
     rozaData["S22"] = (LabyrintModel(internalName: "S22", name: "V", question: "Kde byl první tábor?", code: "MNAKE",coordinates: "50.4910803N, 16.0643860E"));
     rozaData["S23"] = (LabyrintModel(internalName: "S23", name: "A", question: "Které zvíře nežije v Keni?", code: "OAIRP",coordinates: "50.4911446N, 16.0635541E"));
 
