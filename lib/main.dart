@@ -60,7 +60,7 @@ class MyApp extends StatelessWidget {
     rozaData["S62"] = (LabyrintModel(internalName: "S62", name: "O", question: "Kdo vloni nevedl kolej?", code: "AMDNE", coordinates: "50.4829981N, 16.0624148E"));
     rozaData["S63"] = (LabyrintModel(internalName: "S63", name: "Ž", question: "Kteří ptáci zimují v Keni?", code: "LLKRD", coordinates: "50.4836066N, 16.0615535E")); 
 
-    rozaData["S7"] = (LabyrintModel(internalName: "S7", name: "Z", question: "Gratulujeme\nVyhráli jste🎉🎉🎉🎉🎉\nJděte k autu a volejte Róze", code: "ISJES", coordinates: "50.4874772N, 16.0663239E")); 
+    rozaData["S7"] = (LabyrintModel(internalName: "S7", name: "Z", question: "Gratulujeme\nVyhráli jste🎉🎉🎉🎉🎉\nJděte k autu a volejte Róze", code: "ISJES", coordinates: "50.4874772N, 16.0663239E", hasCipher: true, cipherType: "Krajina zvířat", cipherSolution: "chameleon", fixedSolution: true)); 
 
 
     rozaData["S1"]!.addAnswer("19", rozaData["S11"]!);

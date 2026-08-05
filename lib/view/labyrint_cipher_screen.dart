@@ -41,6 +41,31 @@ class _CipherScreenState extends State<CipherScreen> {
 
             return const Text('Nenašel jsem šifru');
           }),
+          if(widget.model.cipherType=="Krajina zvířat")
+            Text("""
+Emu vylezl na vrchol hory, ale protože nemá křídla nemůže sletět dolů, tak pro něho musí vylézt jeho kamarádka Gorila
+
+
+Cvrček rád cvrká na louce u vody, ale ostatní jeho crvkání vytáčí, tak musí cvrkat na kraji
+
+
+Aligátor žije v řece, ale kvůli potravě musí žít u lidského obydlí a rád vylézá z řeky a sluní se na louce
+
+
+Bobr postavil hráz ze dřeva a vytvořil jezýrko a teď je jeho řeka krásně čistá
+
+
+Fretka ráda pobíhá po lese a opaluje se na jeho jižním okraji
+
+
+Impalla žije v pláni
+
+
+Daněk žije v lese a protože jsou s Impalla jediní dva zástupci vysoké, tak se často scházejí
+
+
+Hroch se rád rochní v jezírku, ale nenávidí bobra, tak se od něj drží co nejdál""")
+          ,
           Text("Kód", style: TextStyle(fontSize: 28, fontWeight: .w500),),
           TextFormField(
             key: const ValueKey('my_unique_text_field'),

@@ -6,6 +6,7 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:flutter/services.dart' show rootBundle;
 
 
 class _ActiveSegment {
@@ -1088,6 +1089,10 @@ zebracka""".split('\n');
         return encodeWordToSemaphore(text);
       case "Mayská":
         return encodeToMayaMorseImage(text);
+      case "Historie":
+        return getImageAsUint8List("assets/images/history.png");
+      case "Krajina zvířat":
+        return getImageAsUint8List("assets/images/keyboard.png");
       default:
       return generateTextImage(text);
     }
@@ -1879,6 +1884,16 @@ Future<Uint8List> encodeToMayaMorseImage(String word) async {
   final ByteData? byteData = await img.toByteData(format: ui.ImageByteFormat.png);
   
   return byteData!.buffer.asUint8List();
+}
+
+Future<Uint8List> getImageAsUint8List(String assetPath) async {
+  try {
+    final ByteData data = await rootBundle.load(assetPath);
+    return data.buffer.asUint8List();
+  } catch (e) {
+    debugPrint('Error loading image "$assetPath": $e');
+    return Uint8List(0); // Return null so your app doesn't crash
+  }
 }
 
 }
