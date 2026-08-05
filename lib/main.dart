@@ -34,16 +34,34 @@ class MyApp extends StatelessWidget {
     rozaData["S15"] = (LabyrintModel(internalName: "S15", name: "J", question: "Ze kterého filmu je fráze \"Hakuna Matata\"?", code: "SSCXB"));
     rozaData["S16"] = (LabyrintModel(internalName: "S16", name: "B", question: "Kdo je aktuálně nejmladší účastník tábora?", code: "LKDTL"));
 
-    rozaData["S2"] = (LabyrintModel(internalName: "S2", name: "M", question: "Které zvíře je v africké velké pětce?", code: "YCAER", hasCipher: true, cipherType: "Mayská", skipWord: "Pyramida"));
+    rozaData["S2"] = (LabyrintModel(internalName: "S2", name: "M", question: "Které zvíře není v africké velké pětce?", code: "YCAER", hasCipher: true, cipherType: "Mayská", skipWord: "Pyramida"));
     rozaData["S21"] = (LabyrintModel(internalName: "S21", name: "C", question: "Která písnička je ve lvím králi?", code: "CJPWY"));
     rozaData["S22"] = (LabyrintModel(internalName: "S22", name: "V", question: "Kde byl první tábor?", code: "MNAKE"));
     rozaData["S23"] = (LabyrintModel(internalName: "S23", name: "A", question: "Které zvíře nežije v Keni?", code: "OAIRP"));
 
 
-    rozaData["S3"] = (LabyrintModel(internalName: "S3", name: "D", question: "Kdo je Rózina oblíbená postava z Lvího krále?", code: "KLAKE"));
-    rozaData["S31"] = (LabyrintModel(internalName: "S3", name: "", question: "", code: "MZNME"));
-    rozaData["S32"] = (LabyrintModel(internalName: "S3", name: "", question: "", code: "QPLXJ"));
-    rozaData["S33"] = (LabyrintModel(internalName: "S3", name: "", question: "", code: "ZZNAW"));
+    rozaData["S3"] = (LabyrintModel(internalName: "S3", name: "D", question: "Kdo je Rózina oblíbená postava z Lvího krále?", code: "KLAKE", hasCipher: true, cipherType: "Digitální"));
+    rozaData["S31"] = (LabyrintModel(internalName: "S31", name: "Q", question: "Ve kterém sportu Keňa vyniká?", code: "MZNME"));
+    rozaData["S32"] = (LabyrintModel(internalName: "S32", name: "I", question: "Kolik bylo Žábě na prvním táboře?", code: "QPLXJ"));
+    rozaData["S33"] = (LabyrintModel(internalName: "S33", name: "S", question: "Jak se jmenuje strom na kterém bydlí pavián Raviky?", code: "ZZNAW"));
+
+    rozaData["S4"] = (LabyrintModel(internalName: "S4", name: "H", question: "Které zvíře je v africké hnusné pětce?", code: "FLOP", hasCipher: true, cipherType: "Historie"));
+    rozaData["S41"] = (LabyrintModel(internalName: "S41", name: "W", question: "Co znamená \"Nant'singinyama bagithi baba\"?", code: "VGSEP"));
+    rozaData["S42"] = (LabyrintModel(internalName: "S42", name: "N", question: "Která postava byla na Dívce která upíjela měsíc v kuchyni?", code: "MAOCE"));
+    rozaData["S43"] = (LabyrintModel(internalName: "S43", name: "P", question: "Jak se jmenuje nejvyšší hra Keni?", code: "ZUGHA")); 
+
+    rozaData["S5"] = (LabyrintModel(internalName: "S5", name: "K", question: "Přes které město Ríša s Rózou nejeli na tábor?", code: "AJFRV", hasCipher: true, cipherType: "Křižovatka"));
+    rozaData["S51"] = (LabyrintModel(internalName: "S51", name: "E", question: "V jakém roce vyšel Lví král?", code: "OCRBA"));
+    rozaData["S52"] = (LabyrintModel(internalName: "S52", name: "Y", question: "Kdo hrál Freda a George Weasleyovi?", code: "DSTHJ"));
+    rozaData["S53"] = (LabyrintModel(internalName: "S53", name: "F", question: "Jaké je hlavní město Keni?", code: "BRMBR")); 
+
+    rozaData["S6"] = (LabyrintModel(internalName: "S6", name: "Ch", question: "Jaký je věkový rozdíl, mezi nejstarším a nejmladším táborníkem?", code: "PQOPL", hasCipher: true, cipherType: "Chatovátko"));
+    rozaData["S61"] = (LabyrintModel(internalName: "S61", name: "X", question: "Jak se jmenoval bratr Toničky Bolavé?", code: "ANBER"));
+    rozaData["S62"] = (LabyrintModel(internalName: "S62", name: "O", question: "Kdo vloni nevedl kolej?", code: "AMDNE"));
+    rozaData["S63"] = (LabyrintModel(internalName: "S63", name: "Ž", question: "Kteří ptáci zimují v Keni?", code: "LLKRD")); 
+
+    rozaData["S63"] = (LabyrintModel(internalName: "S63", name: "Ž", question: "Gratulujeme\nVyhráli jste🎉🎉🎉🎉🎉\nJděte k autu a volejte Róze", code: "ISJES")); 
+
 
     rozaData["S1"]!.addAnswer("19", rozaData["S11"]!);
     rozaData["S1"]!.addAnswer("25", rozaData["S12"]!);
@@ -81,13 +99,108 @@ class MyApp extends StatelessWidget {
     rozaData["S21"]!.addAnswer("Can you feel the love tonight", rozaData["S22"]!);
     rozaData["S21"]!.addAnswer("Circle of life", rozaData["S14"]!);
 
-    rozaData["S22"]!.addAnswer("Bublava", rozaData["S11"]!);
     rozaData["S22"]!.addAnswer("Liboc", rozaData["S13"]!);//CORRECT
+    rozaData["S22"]!.addAnswer("Bublava", rozaData["S11"]!);
     rozaData["S22"]!.addAnswer("Devítka", rozaData["S16"]!);
 
     rozaData["S23"]!.addAnswer("Pavián", rozaData["S14"]!);
     rozaData["S23"]!.addAnswer("Tarbíci", rozaData["S2"]!);//CORRECT
     rozaData["S23"]!.addAnswer("Marabu", rozaData["S12"]!);
+
+    rozaData["S3"]!.addAnswer("Pumbaa", rozaData["S31"]!);//CORRECT
+    rozaData["S3"]!.addAnswer("Scar", rozaData["S22"]!);
+    rozaData["S3"]!.addAnswer("Nala", rozaData["S32"]!);
+
+
+    //Ve kterém sportu Keňa vyniká?
+    rozaData["S31"]!.addAnswer("Basketbal", rozaData["S23"]!);
+    rozaData["S31"]!.addAnswer("Hod oštěpem", rozaData["S32"]!);
+    rozaData["S31"]!.addAnswer("Vytrvalostní běhy", rozaData["S4"]!);//CORRECT
+
+    //Kolik bylo Žábě na prvním táboře?
+    rozaData["S32"]!.addAnswer("38", rozaData["S33"]!);
+    rozaData["S32"]!.addAnswer("34", rozaData["S12"]!);
+    rozaData["S32"]!.addAnswer("37", rozaData["S3"]!);//CORRECT
+
+
+    //Jak se jmenuje strom na kterém bydlí pavián Raviky?
+    rozaData["S33"]!.addAnswer("Baobab", rozaData["S21"]!);//CORRECT
+    rozaData["S33"]!.addAnswer("Akácie", rozaData["S23"]!);
+    rozaData["S33"]!.addAnswer("Kaktus", rozaData["S15"]!);
+
+    //Které zvíře je v africké hnusné pětce?
+    rozaData["S4"]!.addAnswer("Člunozobec africký", rozaData["S42"]!);
+    rozaData["S4"]!.addAnswer("Marabu africký", rozaData["S41"]!);//CORRECT
+    rozaData["S4"]!.addAnswer("Rypoš lysý", rozaData["S43"]!);
+
+
+    //Co znamená \"Nant'singinyama bagithi baba\"?
+    rozaData["S41"]!.addAnswer("Ó můj bože, narodil se král", rozaData["S42"]!);
+    rozaData["S41"]!.addAnswer("Ó můj bože, to je lev", rozaData["S5"]!);//CORRECT
+    rozaData["S41"]!.addAnswer("To je vznešený lev", rozaData["S22"]!);
+
+    //Která postava byla na Dívce která upíjela měsíc v kuchyni?
+    rozaData["S42"]!.addAnswer("Glerg", rozaData["S31"]!);//CORRECT
+    rozaData["S42"]!.addAnswer("Antain", rozaData["S11"]!);
+    rozaData["S42"]!.addAnswer("Xan", rozaData["S33"]!);
+
+
+    //Jak se jmenuje nejvyšší hra Keni?
+    rozaData["S43"]!.addAnswer("Kilimandžáro", rozaData["S42"]!);
+    rozaData["S43"]!.addAnswer("Mount Kenya", rozaData["S4"]!);//CORRECT
+    rozaData["S43"]!.addAnswer("Mlima Mrefu", rozaData["S32"]!);
+
+    //Přes které město Ríša s Rózou nejeli na tábor
+    rozaData["S5"]!.addAnswer("Pardubice", rozaData["S52"]!);
+    rozaData["S5"]!.addAnswer("Nymburk", rozaData["S51"]!);//CORRECT
+    rozaData["S5"]!.addAnswer("Hradec Králové", rozaData["S33"]!);
+
+
+    //V jakém roce vyšel Lví král?
+    rozaData["S51"]!.addAnswer("2004", rozaData["S42"]!);
+    rozaData["S51"]!.addAnswer("2001", rozaData["S43"]!);
+    rozaData["S51"]!.addAnswer("1994", rozaData["S6"]!);//CORRECT
+
+    //Kdo hrál Freda a George Weasleyovi?
+    rozaData["S52"]!.addAnswer("James a Oliver Phelpsovi", rozaData["S11"]!);
+    rozaData["S52"]!.addAnswer("Divíšek", rozaData["S33"]!);
+    rozaData["S52"]!.addAnswer("Martin a Pětík", rozaData["S5"]!);//CORRECT
+
+
+    //Jaké je hlavní město Keni?
+    rozaData["S53"]!.addAnswer("Nairobi", rozaData["S41"]!);//CORRECT
+    rozaData["S53"]!.addAnswer("Mombasa", rozaData["S42"]!);
+    rozaData["S53"]!.addAnswer("Wakanda", rozaData["S23"]!);
+
+
+    //Jaký je věkový rozdíl, mezi nejstarším a nejmladším táborníkem?
+    rozaData["S6"]!.addAnswer("56", rozaData["S61"]!);//CORRECT
+    rozaData["S6"]!.addAnswer("49", rozaData["S62"]!);
+    rozaData["S6"]!.addAnswer("44", rozaData["S63"]!);
+
+
+    //Jak se jmenoval bratr Toničky Bolavé?
+    rozaData["S61"]!.addAnswer("Slavomír", rozaData["S63"]!);
+    rozaData["S61"]!.addAnswer("Čestmír", rozaData["S7"]!);//CORRECT
+    rozaData["S61"]!.addAnswer("Denis", rozaData["S32"]!);
+
+    //Kdo vloni nevedl kolej?
+    rozaData["S62"]!.addAnswer("Jelen", rozaData["S53"]!);
+    rozaData["S62"]!.addAnswer("Žába", rozaData["S43"]!);
+    rozaData["S62"]!.addAnswer("Úchyl", rozaData["S51"]!);//CORRECT
+
+
+    //Kteří ptáci zimují v Keni?
+    rozaData["S63"]!.addAnswer("Husa", rozaData["S6"]!);//CORRECT
+    rozaData["S63"]!.addAnswer("Vlaštovka", rozaData["S52"]!);
+    rozaData["S63"]!.addAnswer("Kachna", rozaData["S62"]!);
+
+
+
+
+
+
+   
 
 
   }

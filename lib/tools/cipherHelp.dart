@@ -1033,7 +1033,7 @@ zebracka""".split('\n');
 
   Future<Uint8List> getCipher(String text, String cipherType) async{
     switch (cipherType){
-      case "emoji":
+      case "Chatovátko":
         return generateDiscordEmojiImage(word: text, username: "Rozarka", emojiKey:{
   // Alphabet
   'a': ':star_struck:\n',
@@ -1080,11 +1080,11 @@ zebracka""".split('\n');
   '?': ' :question:',
   '.': ' :red_circle:',
 });
-      case "segment":
+      case "Digitální":
         return encodeTo7SegmentImage(text);
       case "Trifidi":
         return encodeWordToBrailleImage(text);
-      case "semaphore":
+      case "Křižovatka":
         return encodeWordToSemaphore(text);
       case "Mayská":
         return encodeToMayaMorseImage(text);
