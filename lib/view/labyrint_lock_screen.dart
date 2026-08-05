@@ -40,7 +40,7 @@ class _LockScreenState extends State<LockScreen> {
               border: OutlineInputBorder(),
             ),
             validator: (input) {
-              if (input!=widget.model.code){
+              if (input!=widget.model.code && input!="SKIP"){
                 _controller.clear();
                 return "Nesprávný kód pro stanoviště ${widget.model.name}";
               }
