@@ -27,9 +27,9 @@ class MyApp extends StatelessWidget {
     dummyData["D"]!.addAnswer("Odpověd 3", dummyData["C"]!);
 
     rozaData["S1"] = (LabyrintModel(internalName:"S1", name: "T", question: "Kolik je Ríšovi?", code: "AAAA", hasCipher: true, cipherType: "segment", cipherSolution: "politologies", fixedSolution: false, skipWord: "skip"));
-    rozaData["S11"] = (LabyrintModel(internalName: "S11", name: "L", question: "Na co byl přejmenován Mexický záliv?", code: "AAAA"));
+    rozaData["S11"] = (LabyrintModel(internalName: "S11", name: "L", question: "Která zvířata v Keni každý rok migrují?", code: "AAAA"));
     rozaData["S12"] = (LabyrintModel(internalName: "S12", name: "R", question: "Co bylo téma prvního tábora?", code: "AAAA"));
-    rozaData["S13"] = (LabyrintModel(internalName: "S13", name: "U", question: "Kdy získalo Mexiko nezávislost?", code: "AAAA"));
+    rozaData["S13"] = (LabyrintModel(internalName: "S13", name: "U", question: "Kdy získala Keňa nezávislost?", code: "AAAA"));
     rozaData["S14"] = (LabyrintModel(internalName: "S14", name: "G", question: "Který titul ještě Úchyl neměl?", code: "AAAA"));
     rozaData["S15"] = (LabyrintModel(internalName: "S15", name: "J", question: "Kdo loni nevedl kolej?", code: "AAAA"));
     rozaData["S16"] = (LabyrintModel(internalName: "S16", name: "B", question: "Kdo je aktuálně nejmladší účastník tábora?", code: "AAAA"));
@@ -40,17 +40,17 @@ class MyApp extends StatelessWidget {
     rozaData["S1"]!.addAnswer("25", rozaData["S12"]!);
     rozaData["S1"]!.addAnswer("20", rozaData["S13"]!);//CORRECT
 
-    rozaData["S11"]!.addAnswer("Kennedyho záliv", rozaData["S14"]!);
-    rozaData["S11"]!.addAnswer("Americký záliv", rozaData["S15"]!);//Correct
-    rozaData["S11"]!.addAnswer("Trumpovo brouzdaliště", rozaData["S16"]!);
+    rozaData["S11"]!.addAnswer("Straka", rozaData["S14"]!);
+    rozaData["S11"]!.addAnswer("Pakoně", rozaData["S15"]!);//Correct
+    rozaData["S11"]!.addAnswer("Sloni", rozaData["S16"]!);
 
     rozaData["S12"]!.addAnswer("Nic", rozaData["S1"]!);//CORRECT
     rozaData["S12"]!.addAnswer("Daleká cesta za domovem", rozaData["S15"]!);
     rozaData["S12"]!.addAnswer("Kapitán modrý medvěd", rozaData["S16"]!);
 
-    rozaData["S13"]!.addAnswer("1821", rozaData["S2"]!);//CORRECT
-    rozaData["S13"]!.addAnswer("1234", rozaData["S14"]!);
-    rozaData["S13"]!.addAnswer("1848", rozaData["S15"]!);
+    rozaData["S13"]!.addAnswer("1963", rozaData["S2"]!);//CORRECT
+    rozaData["S13"]!.addAnswer("1905", rozaData["S14"]!);
+    rozaData["S13"]!.addAnswer("1821", rozaData["S15"]!);
 
     rozaData["S14"]!.addAnswer("Jeho královská výsost", rozaData["S12"]!); //Correct
     rozaData["S14"]!.addAnswer("Baron", rozaData["S15"]!);
