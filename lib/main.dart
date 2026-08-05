@@ -26,15 +26,15 @@ class MyApp extends StatelessWidget {
     dummyData["D"]!.addAnswer("Odpověd 2", dummyData["B"]!);
     dummyData["D"]!.addAnswer("Odpověd 3", dummyData["C"]!);
 
-    rozaData["S1"] = (LabyrintModel(name: "S1", question: "Kolik je Ríšovi?", code: "S1", hasCipher: true, cipherType: "segment", cipherSolution: "politologies", fixedSolution: false, skipWord: "skip"));
-    rozaData["S11"] = (LabyrintModel(name: "S11", question: "Na co byl přejmenován Mexický záliv?", code: "AAAA"));
-    rozaData["S12"] = (LabyrintModel(name: "S12", question: "Co bylo téma prvního tábora?", code: "AAAA"));
-    rozaData["S13"] = (LabyrintModel(name: "S13", question: "Kdy získalo Mexiko nezávislost?", code: "AAAA"));
-    rozaData["S14"] = (LabyrintModel(name: "S14", question: "Který titul ještě Úchyl neměl?", code: "AAAA"));
-    rozaData["S15"] = (LabyrintModel(name: "S15", question: "Kdo loni nevedl kolej?", code: "AAAA"));
-    rozaData["S16"] = (LabyrintModel(name: "S16", question: "Kdo je aktuálně nejmladší účastník tábora?", code: "AAAA"));
+    rozaData["S1"] = (LabyrintModel(internalName:"S1", name: "T", question: "Kolik je Ríšovi?", code: "AAAA", hasCipher: true, cipherType: "segment", cipherSolution: "politologies", fixedSolution: false, skipWord: "skip"));
+    rozaData["S11"] = (LabyrintModel(internalName: "S11", name: "L", question: "Na co byl přejmenován Mexický záliv?", code: "AAAA"));
+    rozaData["S12"] = (LabyrintModel(internalName: "S12", name: "R", question: "Co bylo téma prvního tábora?", code: "AAAA"));
+    rozaData["S13"] = (LabyrintModel(internalName: "S13", name: "U", question: "Kdy získalo Mexiko nezávislost?", code: "AAAA"));
+    rozaData["S14"] = (LabyrintModel(internalName: "S14", name: "G", question: "Který titul ještě Úchyl neměl?", code: "AAAA"));
+    rozaData["S15"] = (LabyrintModel(internalName: "S15", name: "J", question: "Kdo loni nevedl kolej?", code: "AAAA"));
+    rozaData["S16"] = (LabyrintModel(internalName: "S16", name: "B", question: "Kdo je aktuálně nejmladší účastník tábora?", code: "AAAA"));
 
-    rozaData["S2"] = (LabyrintModel(name: "S2", question: "S2", code: "AAAA"));
+    rozaData["S2"] = (LabyrintModel(internalName: "S2", name: "S2", question: "S2", code: "AAAA"));
 
     rozaData["S1"]!.addAnswer("19", rozaData["S11"]!);
     rozaData["S1"]!.addAnswer("25", rozaData["S12"]!);

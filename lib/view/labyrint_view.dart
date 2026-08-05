@@ -20,7 +20,7 @@ class LabyrintView extends StatelessWidget{
           title: Text(model.answers[i], style: TextStyle(fontSize: 20, fontWeight: .w300)), 
           leading: Text(model.next[i].name, style: TextStyle(fontSize: 30, fontWeight: .w600, color: Color.fromARGB(255, 0, 0, 0))),
           onTap: () {
-            handleTap(model.next[i].name);
+            handleTap(model.next[i].internalName!);
           },
           )
           
