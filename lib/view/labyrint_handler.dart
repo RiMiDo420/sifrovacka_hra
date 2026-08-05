@@ -74,9 +74,11 @@ class _LabyrintHandlerState extends State<LabyrintHandler>{
                 ),)]
       )
       )),
-      body: Padding( padding: .all(8),child: 
-        Center(child: 
-          Expanded(child:SingleChildScrollView(child:Column(
+      body:
+        Align(
+          alignment: .topCenter,
+          child: 
+          Padding( padding: .all(8),child:SingleChildScrollView(child:Column(
             mainAxisAlignment: .start,
             spacing: 30,
             children: [
@@ -120,7 +122,7 @@ class _LabyrintHandlerState extends State<LabyrintHandler>{
         
           
         )
-      ));
+      );
   }
 
 }
