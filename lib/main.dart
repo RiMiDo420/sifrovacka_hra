@@ -34,28 +34,28 @@ class MyApp extends StatelessWidget {
     rozaData["S15"] = (LabyrintModel(internalName: "S15", name: "J", question: "Ze kterého filmu je fráze \"Hakuna Matata\"?", code: "SSCXB"));
     rozaData["S16"] = (LabyrintModel(internalName: "S16", name: "B", question: "Kdo je aktuálně nejmladší účastník tábora?", code: "LKDTL"));
 
-    rozaData["S2"] = (LabyrintModel(internalName: "S2", name: "M", question: "Které zvíře není v africké velké pětce?", code: "YCAER", hasCipher: true, cipherType: "Mayská", skipWord: "pyramida"));
-    rozaData["S21"] = (LabyrintModel(internalName: "S21", name: "C", question: "Která písnička je ve lvím králi?", code: "CJPWY"));
+    rozaData["S2"] = (LabyrintModel(internalName: "S2", name: "M", question: "Které zvíře je v africké velké pětce?", code: "YCAER", hasCipher: true, cipherType: "Mayská", skipWord: "pyramida"));
+    rozaData["S21"] = (LabyrintModel(internalName: "S21", name: "C", question: "Která písnička není ve lvím králi?", code: "CJPWY"));
     rozaData["S22"] = (LabyrintModel(internalName: "S22", name: "V", question: "Kde byl první tábor?", code: "MNAKE"));
     rozaData["S23"] = (LabyrintModel(internalName: "S23", name: "A", question: "Které zvíře nežije v Keni?", code: "OAIRP"));
 
 
-    rozaData["S3"] = (LabyrintModel(internalName: "S3", name: "D", question: "Kdo je Rózina oblíbená postava z Lvího krále?", code: "KLAKE", hasCipher: true, cipherType: "Digitální"));
+    rozaData["S3"] = (LabyrintModel(internalName: "S3", name: "D", question: "Kdo je Rózina oblíbená postava z Lvího krále?", code: "KLAKE", hasCipher: true, cipherType: "Digitální", skipWord: "hodiny"));
     rozaData["S31"] = (LabyrintModel(internalName: "S31", name: "Q", question: "Ve kterém sportu Keňa vyniká?", code: "MZNME"));
     rozaData["S32"] = (LabyrintModel(internalName: "S32", name: "I", question: "Kolik bylo Žábě na prvním táboře?", code: "QPLXJ"));
     rozaData["S33"] = (LabyrintModel(internalName: "S33", name: "S", question: "Jak se jmenuje strom na kterém bydlí pavián Raviky?", code: "ZZNAW"));
 
-    rozaData["S4"] = (LabyrintModel(internalName: "S4", name: "H", question: "Které zvíře je v africké hnusné pětce?", code: "FLOP", hasCipher: true, cipherType: "Historie"));
+    rozaData["S4"] = (LabyrintModel(internalName: "S4", name: "H", question: "Které zvíře je v africké hnusné pětce?", code: "FLOP", hasCipher: true, cipherType: "Historie", skipWord: "mamut"));
     rozaData["S41"] = (LabyrintModel(internalName: "S41", name: "W", question: "Co znamená \"Nant'singinyama bagithi baba\"?", code: "VGSEP"));
     rozaData["S42"] = (LabyrintModel(internalName: "S42", name: "N", question: "Která postava byla na Dívce která upíjela měsíc v kuchyni?", code: "MAOCE"));
     rozaData["S43"] = (LabyrintModel(internalName: "S43", name: "P", question: "Jak se jmenuje nejvyšší hra Keni?", code: "ZUGHA")); 
 
-    rozaData["S5"] = (LabyrintModel(internalName: "S5", name: "K", question: "Přes které město Ríša s Rózou nejeli na tábor?", code: "AJFRV", hasCipher: true, cipherType: "Křižovatka"));
+    rozaData["S5"] = (LabyrintModel(internalName: "S5", name: "K", question: "Přes které město Ríša s Rózou nejeli na tábor?", code: "AJFRV", hasCipher: true, cipherType: "Křižovatka", skipWord: "cervena"));
     rozaData["S51"] = (LabyrintModel(internalName: "S51", name: "E", question: "V jakém roce vyšel Lví král?", code: "OCRBA"));
     rozaData["S52"] = (LabyrintModel(internalName: "S52", name: "Y", question: "Kdo hrál Freda a George Weasleyovi?", code: "DSTHJ"));
     rozaData["S53"] = (LabyrintModel(internalName: "S53", name: "F", question: "Jaké je hlavní město Keni?", code: "BRMBR")); 
 
-    rozaData["S6"] = (LabyrintModel(internalName: "S6", name: "Ch", question: "Jaký je věkový rozdíl, mezi nejstarším a nejmladším táborníkem?", code: "PQOPL", hasCipher: true, cipherType: "Chatovátko"));
+    rozaData["S6"] = (LabyrintModel(internalName: "S6", name: "Ch", question: "Jaký je věkový rozdíl, mezi nejstarším a nejmladším táborníkem?", code: "PQOPL", hasCipher: true, cipherType: "Chatovátko", skipWord: "mattermost"));
     rozaData["S61"] = (LabyrintModel(internalName: "S61", name: "X", question: "Jak se jmenoval bratr Toničky Bolavé?", code: "ANBER"));
     rozaData["S62"] = (LabyrintModel(internalName: "S62", name: "O", question: "Kdo vloni nevedl kolej?", code: "AMDNE"));
     rozaData["S63"] = (LabyrintModel(internalName: "S63", name: "Ž", question: "Kteří ptáci zimují v Keni?", code: "LLKRD")); 

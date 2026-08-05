@@ -77,6 +77,7 @@ class _LabyrintHandlerState extends State<LabyrintHandler>{
       body: Padding( padding: .all(8),child: 
         Center(child: 
           Expanded(child:SingleChildScrollView(child:Column(
+            mainAxisAlignment: .start,
             spacing: 30,
             children: [
               locked
@@ -85,6 +86,13 @@ class _LabyrintHandlerState extends State<LabyrintHandler>{
                 onSubmit: () => setState(() {
                   locked = false;
                   history.add(new LabyrintHistoryItem(stop: widget.labyrint[currentStop]!));
+                  if(widget.labyrint[currentStop]!.cipherType == "Historie"){
+                    String code = "";
+                    for(int i = 1; i<=5; i++){
+                      code+=history[history.length-i].stop.name;
+                    }
+                    widget.labyrint[currentStop]!.cipherSolution = code.toLowerCase();
+                  }
                 })
               )
               : ciphered 
