@@ -4,7 +4,7 @@ import 'dart:typed_data';
 import 'package:sifrovacka_hra/tools/cipherHelp.dart';
 
 class LabyrintModel{
-  LabyrintModel({required this.name, this.internalName, required this.question, code, this.hasCipher = false, this.cipherSolution, this.cipherType, this.fixedSolution = false, this.skipWord}){
+  LabyrintModel({required this.name, this.internalName, this.coordinates = "Zavolej Róze", required this.question, code, this.hasCipher = false, this.cipherSolution, this.cipherType, this.fixedSolution = false, this.skipWord}){
     this.code = code ?? String.fromCharCodes(Iterable.generate(6, (_) => Random().nextInt(26)+65));
     nextStop();
     internalName ??= name;
@@ -14,6 +14,7 @@ class LabyrintModel{
   String? internalName;
   late String code;
   final String question;
+  final String coordinates;
   List<String> answers = [];
   List<LabyrintModel> next = [];
 

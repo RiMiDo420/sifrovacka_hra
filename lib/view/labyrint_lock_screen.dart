@@ -28,6 +28,7 @@ class _LockScreenState extends State<LockScreen> {
         spacing: 20,
         children: [
           Text("Zadejte kód pro stanoviště ${widget.model.name}", style: TextStyle(fontSize: 28, fontWeight: .w500),),
+          Text(widget.model.coordinates, style: TextStyle(fontSize: 21, fontWeight: .w100),),          
           TextFormField(
             key: const ValueKey('my_unique_text_field'),
             autovalidateMode: .onUnfocus,
