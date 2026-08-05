@@ -1082,11 +1082,11 @@ zebracka""".split('\n');
 });
       case "segment":
         return encodeTo7SegmentImage(text);
-      case "braille":
+      case "Trifidi":
         return encodeWordToBrailleImage(text);
       case "semaphore":
         return encodeWordToSemaphore(text);
-      case "maya":
+      case "Mayská":
         return encodeToMayaMorseImage(text);
       default:
       return generateTextImage(text);

@@ -26,15 +26,24 @@ class MyApp extends StatelessWidget {
     dummyData["D"]!.addAnswer("Odpověd 2", dummyData["B"]!);
     dummyData["D"]!.addAnswer("Odpověd 3", dummyData["C"]!);
 
-    rozaData["S1"] = (LabyrintModel(internalName:"S1", name: "T", question: "Kolik je Ríšovi?", code: "AAAA", hasCipher: true, cipherType: "segment", cipherSolution: "politologies", fixedSolution: false, skipWord: "skip"));
-    rozaData["S11"] = (LabyrintModel(internalName: "S11", name: "L", question: "Která zvířata v Keni každý rok migrují?", code: "AAAA"));
-    rozaData["S12"] = (LabyrintModel(internalName: "S12", name: "R", question: "Co bylo téma prvního tábora?", code: "AAAA"));
-    rozaData["S13"] = (LabyrintModel(internalName: "S13", name: "U", question: "Kdy získala Keňa nezávislost?", code: "AAAA"));
-    rozaData["S14"] = (LabyrintModel(internalName: "S14", name: "G", question: "Který titul ještě Úchyl neměl?", code: "AAAA"));
-    rozaData["S15"] = (LabyrintModel(internalName: "S15", name: "J", question: "Kdo loni nevedl kolej?", code: "AAAA"));
-    rozaData["S16"] = (LabyrintModel(internalName: "S16", name: "B", question: "Kdo je aktuálně nejmladší účastník tábora?", code: "AAAA"));
+    rozaData["S1"] = (LabyrintModel(internalName:"S1", name: "T", question: "Kolik je Ríšovi?", code: "SJVUE", hasCipher: true, cipherType: "Trifidi", cipherSolution: "nejkulatoulinkat", fixedSolution: true, skipWord: "krtek"));
+    rozaData["S11"] = (LabyrintModel(internalName: "S11", name: "L", question: "Která zvířata v Keni každý rok migrují?", code: "LPCXS"));
+    rozaData["S12"] = (LabyrintModel(internalName: "S12", name: "R", question: "Co bylo téma prvního tábora?", code: "HMBDE"));
+    rozaData["S13"] = (LabyrintModel(internalName: "S13", name: "U", question: "Kdy získala Keňa nezávislost?", code: "QASMN"));
+    rozaData["S14"] = (LabyrintModel(internalName: "S14", name: "G", question: "Který titul ještě Úchyl neměl?", code: "VCXBV"));
+    rozaData["S15"] = (LabyrintModel(internalName: "S15", name: "J", question: "Ze kterého filmu je fráze \"Hakuna Matata\"?", code: "SSCXB"));
+    rozaData["S16"] = (LabyrintModel(internalName: "S16", name: "B", question: "Kdo je aktuálně nejmladší účastník tábora?", code: "LKDTL"));
 
-    rozaData["S2"] = (LabyrintModel(internalName: "S2", name: "S2", question: "S2", code: "AAAA"));
+    rozaData["S2"] = (LabyrintModel(internalName: "S2", name: "M", question: "Které zvíře je v africké velké pětce?", code: "YCAER", hasCipher: true, cipherType: "Mayská", skipWord: "Pyramida"));
+    rozaData["S21"] = (LabyrintModel(internalName: "S21", name: "C", question: "Která písnička je ve lvím králi?", code: "CJPWY"));
+    rozaData["S22"] = (LabyrintModel(internalName: "S22", name: "V", question: "Kde byl první tábor?", code: "MNAKE"));
+    rozaData["S23"] = (LabyrintModel(internalName: "S23", name: "A", question: "Které zvíře nežije v Keni?", code: "OAIRP"));
+
+
+    rozaData["S3"] = (LabyrintModel(internalName: "S3", name: "D", question: "Kdo je Rózina oblíbená postava z Lvího krále?", code: "KLAKE"));
+    rozaData["S31"] = (LabyrintModel(internalName: "S3", name: "", question: "", code: "MZNME"));
+    rozaData["S32"] = (LabyrintModel(internalName: "S3", name: "", question: "", code: "QPLXJ"));
+    rozaData["S33"] = (LabyrintModel(internalName: "S3", name: "", question: "", code: "ZZNAW"));
 
     rozaData["S1"]!.addAnswer("19", rozaData["S11"]!);
     rozaData["S1"]!.addAnswer("25", rozaData["S12"]!);
@@ -56,15 +65,29 @@ class MyApp extends StatelessWidget {
     rozaData["S14"]!.addAnswer("Baron", rozaData["S15"]!);
     rozaData["S14"]!.addAnswer("Ředitel", rozaData["S16"]!);
 
-    rozaData["S15"]!.addAnswer("Úchyl", rozaData["S1"]!);//CORRECT
-    rozaData["S15"]!.addAnswer("Jelen", rozaData["S11"]!);
-    rozaData["S15"]!.addAnswer("Žába", rozaData["S12"]!);
+    rozaData["S15"]!.addAnswer("Lví král", rozaData["S1"]!);//CORRECT
+    rozaData["S15"]!.addAnswer("Mauglí", rozaData["S11"]!);
+    rozaData["S15"]!.addAnswer("Tučňáci z Madagaskaru", rozaData["S12"]!);
 
     rozaData["S16"]!.addAnswer("Robin", rozaData["S1"]!);//CORRECT
     rozaData["S16"]!.addAnswer("Julinka", rozaData["S14"]!);
     rozaData["S16"]!.addAnswer("Sofinka", rozaData["S15"]!);
 
+    rozaData["S2"]!.addAnswer("Žirafa", rozaData["S23"]!);
+    rozaData["S2"]!.addAnswer("Hroch", rozaData["S22"]!);
+    rozaData["S2"]!.addAnswer("Buvol", rozaData["S21"]!);//CORRECT
 
+    rozaData["S21"]!.addAnswer("Colours of the wind", rozaData["S3"]!);//CORRECT
+    rozaData["S21"]!.addAnswer("Can you feel the love tonight", rozaData["S22"]!);
+    rozaData["S21"]!.addAnswer("Circle of life", rozaData["S14"]!);
+
+    rozaData["S22"]!.addAnswer("Bublava", rozaData["S11"]!);
+    rozaData["S22"]!.addAnswer("Liboc", rozaData["S13"]!);//CORRECT
+    rozaData["S22"]!.addAnswer("Devítka", rozaData["S16"]!);
+
+    rozaData["S23"]!.addAnswer("Pavián", rozaData["S14"]!);
+    rozaData["S23"]!.addAnswer("Tarbíci", rozaData["S2"]!);//CORRECT
+    rozaData["S23"]!.addAnswer("Marabu", rozaData["S12"]!);
 
 
   }
