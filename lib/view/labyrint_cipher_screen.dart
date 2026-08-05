@@ -26,7 +26,7 @@ class _CipherScreenState extends State<CipherScreen> {
     // TODO: implement build
     return Padding(
       padding: .directional(start: 20, end: 20),
-      child: Column(
+      child:Column(
         spacing: 20,
         children: [
           Text("${widget.model.cipherType}", style: TextStyle(fontSize: 28, fontWeight: .w500),),

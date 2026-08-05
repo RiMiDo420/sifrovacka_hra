@@ -76,7 +76,7 @@ class _LabyrintHandlerState extends State<LabyrintHandler>{
       )),
       body: Padding( padding: .all(8),child: 
         Center(child: 
-          Column(
+          Expanded(child:SingleChildScrollView(child:Column(
             spacing: 30,
             children: [
               locked
@@ -107,7 +107,7 @@ class _LabyrintHandlerState extends State<LabyrintHandler>{
               ),
 
             ],
-          )
+          )))
           
         
           
