@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
     dummyData["D"]!.addAnswer("Odpověd 2", dummyData["B"]!);
     dummyData["D"]!.addAnswer("Odpověd 3", dummyData["C"]!);
 
-    rozaData["S1"] = (LabyrintModel(internalName:"S1", name: "T", question: "Kolik je Ríšovi?", code: "SJVUE", hasCipher: true, cipherType: "Mayská", cipherSolution: "nejkulatoulinkatejsi", fixedSolution: true, skipWord: "krtek" ,coordinates: "50.4874106N, 16.0645178E"));
+    rozaData["S1"] = (LabyrintModel(internalName:"S1", name: "T", question: "Kolik je Ríšovi?", code: "SJVUE", hasCipher: true, cipherType: "Trifidi", cipherSolution: "nejkulatoulinkatejsi", fixedSolution: true, skipWord: "krtek" ,coordinates: "50.4874106N, 16.0645178E"));
     rozaData["S11"] = (LabyrintModel(internalName: "S11", name: "L", question: "Která zvířata v Keni každý rok migrují?", code: "LPCXS" ,coordinates: "50.4879838N, 16.0641588E"));
     rozaData["S12"] = (LabyrintModel(internalName: "S12", name: "R", question: "Co bylo téma prvního tábora?", code: "HMBDE" ,coordinates: "50.4878910N, 16.0633627E"));
     rozaData["S13"] = (LabyrintModel(internalName: "S13", name: "U", question: "Kdy získala Keňa nezávislost?", code: "QASMN" ,coordinates: "50.4876169N, 16.0637337E"));
