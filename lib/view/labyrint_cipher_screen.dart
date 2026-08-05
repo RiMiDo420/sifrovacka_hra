@@ -67,7 +67,8 @@ class _CipherScreenState extends State<CipherScreen> {
                 selection: _controller.value.selection,
               );
             },
-          )
+          ),
+        ElevatedButton.icon(onPressed: () {}, label: Text("Potvrdit")),
         ],
       ),
     );

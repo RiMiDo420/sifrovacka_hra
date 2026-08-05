@@ -1,11 +1,11 @@
 {
-    "name": "sifrolabyrint",
-    "short_name": "sifrolabyrint",
+    "name": "Sifrolabyrint",
+    "short_name": "Sifrolabyrint",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A companion app for a camp game I'm helping runc, which generates the ciphers and integrates them into a Labyrinth.",
+    "description": "A companion app for a camp game I'm helping run, which generates the ciphers and integrates them into a Labyrinth.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

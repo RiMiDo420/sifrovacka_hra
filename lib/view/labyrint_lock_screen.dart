@@ -53,7 +53,8 @@ class _LockScreenState extends State<LockScreen> {
                 selection: _controller.value.selection,
               );
             },
-          )
+          ),
+          ElevatedButton.icon(onPressed: () {}, label: Text("Potvrdit")),
         ],
       ),
     );
