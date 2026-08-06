@@ -20,7 +20,7 @@ class LabyrintHandler extends StatefulWidget{
 
 class _LabyrintHandlerState extends State<LabyrintHandler>{
   
-  String currentStop = "S1";
+  String currentStop = "S0";
   bool locked = true;
   bool ciphered = true;
   List<LabyrintHistoryItem> history = [];

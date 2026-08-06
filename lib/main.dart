@@ -26,6 +26,8 @@ class MyApp extends StatelessWidget {
     dummyData["D"]!.addAnswer("Odpověd 2", dummyData["B"]!);
     dummyData["D"]!.addAnswer("Odpověd 3", dummyData["C"]!);
 
+
+    rozaData["S0"] = (LabyrintModel(internalName:"S0", name: "0", question: "Těšíte se na hru", code: "AAAAA", hasCipher: true, cipherType: "Textová", cipherSolution: "nejkulatoulinkatejsi", fixedSolution: false, skipWord: "text" ,coordinates: "Zadej kód AAAAA"));
     rozaData["S1"] = (LabyrintModel(internalName:"S1", name: "T", question: "Kolik je Ríšovi?", code: "SJVUE", hasCipher: true, cipherType: "Trifidi", cipherSolution: "nejkulatoulinkatejsi", fixedSolution: false, skipWord: "krtek" ,coordinates: "50.4874106N, 16.0645178E"));
     rozaData["S11"] = (LabyrintModel(internalName: "S11", name: "L", question: "Která zvířata v Keni každý rok migrují?", code: "LPCXS" ,coordinates: "50.4879838N, 16.0641588E"));
     rozaData["S12"] = (LabyrintModel(internalName: "S12", name: "R", question: "Co bylo téma prvního tábora?", code: "HMBDE" ,coordinates: "50.4878910N, 16.0633627E"));
@@ -62,6 +64,10 @@ class MyApp extends StatelessWidget {
 
     rozaData["S7"] = (LabyrintModel(internalName: "S7", name: "Z", question: "Gratulujeme\nVyhráli jste🎉🎉🎉🎉🎉\nJděte k autu a volejte Róze", code: "ISJES", coordinates: "50.4874772N, 16.0663239E", hasCipher: true, cipherType: "Krajina zvířat", cipherSolution: "chameleon", fixedSolution: true)); 
 
+
+    rozaData["S0"]!.addAnswer("Jasně", rozaData["S1"]!);
+    rozaData["S0"]!.addAnswer("Anoooo 🥳", rozaData["S1"]!);
+    rozaData["S0"]!.addAnswer("Určite", rozaData["S1"]!);
 
     rozaData["S1"]!.addAnswer("19", rozaData["S11"]!);
     rozaData["S1"]!.addAnswer("25", rozaData["S12"]!);
